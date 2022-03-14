@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Move</title>
+</head>
+
+<body>
+    <div class="window">
+        <img class="bounce" src="/bounce.png" alt="шарик">
+    </div>
+    <script>const bounce = document.querySelector('.bounce')
+        document.addEventListener('mousemove', function (e) {
+            let left = `${e.clientX}px`;
+            let top = `${e.clientY}px`;
+            bounce.style.left = left,
+                bounce.style.top = top,
+                console.log(left, top);
+        })</script>
+</body>
+
+</html>
